@@ -18,7 +18,6 @@ export const authMiddleware = async (req, res, next) => {
     });
 
     if (!user) {
-      console.log("sini bro");
       res
         .status(401)
         .json({
